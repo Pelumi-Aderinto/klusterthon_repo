@@ -5,16 +5,12 @@ from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 
 # Load the models and label encoders
-model_plant_info = load('plant_season_prediction_model.joblib')
 model_harvest_info = load('harvest_prediction_model.joblib')
 scaler = load('standard_scaler.joblib')
 
-model_plant = model_plant_info['model']
-label_encoder_season = model_plant_info['label_encoder_season']
-label_encoder_label = model_plant_info['label_encoder_label']
-label_encoder_country = model_plant_info['label_encoder_country']
-
 model_harvest = model_harvest_info['model']
+label_encoder_label = model_harvest_info['label_encoder_label']
+label_encoder_country = model_harvest_info['label_encoder_country']
 label_encoder_harvest_season = model_harvest_info['label_encoder_harvest_season']
 
 # Define API endpoint
@@ -45,17 +41,12 @@ def predict():
             country_encoded,
         ]])
 
-        # Make predictions for crop label
-        crop_label_prediction = model_plant.predict(sample_input_scaled)[0]
-        predicted_crop = label_encoder_season.inverse_transform([crop_label_prediction])[0]
-
         # Make predictions for harvest season
         harvest_season_prediction = model_harvest.predict(sample_input_scaled)[0]
         predicted_harvest_season = label_encoder_harvest_season.inverse_transform([harvest_season_prediction])[0]
 
         result = {
-            f"The predicted best season to plant {sample_input['label']} based on the information provided is": predicted_crop,
-            f"The predicted best harvest season of {sample_input['label']} that will result in optimum yield is": predicted_harvest_season
+            "Best_Harvest_Season": predicted_harvest_season
         }
 
         return jsonify(result)
