@@ -31,9 +31,9 @@ The project involves predicting the best season to harvest a specific crop based
 ## DATA COLLECTION
 The dataset is loaded from a CSV file named "Crop_Data.csv," containing information about environmental factors, crop labels, and geographical details.
 ## EXPLORATORY DATA ANALYSIS (EDA)
-Exploratory Data Analysis is performed to understand the dataset, including visualizations and insights gained from the data. This EDA is done in the later section of the `klusterthon.ipynb` notebook.
+Exploratory Data Analysis is performed to understand the dataset, including visualizations and insights gained from the data. This EDA is done in the later section of the `klusterthon3.ipynb` notebook.
 ## DATA PREPROCESSING
-Categorical variables such as 'season,' 'label,' 'Country,' and 'harvest_season' are encoded using LabelEncoders. Numerical features are standardized using a StandardScaler.
+Categorical variables such as 'label,' 'Country,' and 'harvest_season' are encoded using LabelEncoders. Numerical features are standardized using a StandardScaler.
 
 # MODEL TRAINING
 ## MODEL SELECTION
