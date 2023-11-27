@@ -44,7 +44,7 @@ Support Vector Classifiers (SVC) is chosen as the machine learning model for cro
 * Works Well with Small and Medium-Sized Datasets: SVMs often perform well when the number of features is not extremely large and when the dataset is not excessively large.
 
 ## MODEL TRAINING PROCESS
-The models are trained using the SupportVectorClassifier(SVC)  with an rbf kernel and a regularization parameter C = 1. The dataset is split into training and testing sets in the 80%-20% ratio.
+The model is trained using the SupportVectorClassifier(SVC)  with an rbf kernel and a regularization parameter C = 1. The dataset is split into training and testing sets in the 80%-20% ratio.
 
 ## MODEL EVALUATION
 Model accuracy is evaluated for the crop harvest season prediction using sklearn's accuracy_score, precision_score, recall_score, f1_score, and classification_report. The model gave an accuracy of 91.07%
