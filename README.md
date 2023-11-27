@@ -25,7 +25,7 @@ This project is aimed at building a solution that predicts the best time to harv
 This document provides a step-by-step guide for deploying and hosting a crop harvest season prediction model. The entire process covers data preparation, model training, serialization, and deployment using Flask on the PythonAnywhere platform.
 
 # PROJECT OVERVIEW
-The project involves predicting the best season to plant a specific crop based on environmental factors and geographical location. Two machine learning models are trained: one for predicting the planting season and another for predicting the harvest season.
+The project involves predicting the best season to harvest a specific crop based on environmental factors and geographical location. A machine learning model is trained for predicting the harvest season.
 
 # DATA PREPARATION
 ## DATA COLLECTION
