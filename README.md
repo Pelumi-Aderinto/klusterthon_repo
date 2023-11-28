@@ -1,5 +1,5 @@
 # Precision Farming Model Deployment Detailed Documentation
-This project is aimed at building a solution that predicts the best time to harvest crops, taking into account local weather conditions, crop information, and soil quality. This solution will help farmers improve their yields and help them farm with surgical precision.
+This project is aimed at building a solution that predicts the best time to harvest crops, taking into account local weather conditions, crop information, and soil quality. This solution will help farmers improve their yields and help them farm with surgical precision. This repo details the link to the Front End code, Back End code, link postman documentation and finally the details of how the model was built. Please check the later section of this readme file to see the link to the frontend and backend codes as well as the link to the postman documentation. 
 
 # Table of Contents
 1. Introduction
@@ -68,5 +68,9 @@ Files, including the Flask application, trained models, LabelEncoders, and the S
 The Flask application is finally run and hosted on PythonAnywhere.
 Here is a link to the [endpoint](https://pelvic23.pythonanywhere.com/predict?temperature=17&humidity=160&ph=7.5&water_availability=80&label=chickpea&country=Nigeria)
 
+# [LINK TO BACKEND CODE](https://github.com/oresho/smartfarm)
 
+# [LINK TO FRONTEND CODE](https://github.com/Abdulsalam24/smartfarm-group)
+
+# [LINK TO POSTMAN](https://documenter.getpostman.com/view/28605577/2s9YeD9ZNQ)
 
