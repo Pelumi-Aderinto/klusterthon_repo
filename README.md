@@ -20,7 +20,9 @@ This project is aimed at building a solution that predicts the best season to ha
 1. Deployment on PythonAnywhere
    * Uploading Files to PythonAnywhere
    * Running the Flask App
-
+1. LINK TO BACKEND CODE
+1. LINK TO FRONTEND CODE
+1. LINK TO POSTMAN
 # INTRODUCTION
 This document provides a step-by-step guide for deploying and hosting a crop harvest season prediction model. The entire process covers data preparation, model training, serialization, and deployment using Flask on the PythonAnywhere platform.
 
