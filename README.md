@@ -1,4 +1,4 @@
-# Precision Farming Model Deployment Detailed Documentation
+# Precision Farming / Smart Farming Project
 This project is aimed at building a solution that predicts the best time to harvest crops, taking into account local weather conditions, crop information, and soil quality. This solution will help farmers improve their yields and help them farm with surgical precision. This repo details the link to the Front End code, Back End code, link postman documentation and finally the details of how the model was built. Please check the later section of this readme file to see the link to the frontend and backend codes as well as the link to the postman documentation. 
 
 # Table of Contents
